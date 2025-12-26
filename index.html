@@ -1,15 +1,31 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Джейсон Стэтхэм</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Игра Камень-Ножницы-Бумага</title>
+    <style>
+        button {
+            font-size: 16px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+            color: green;
+        }
+    </style>
 </head>
 <body>
-    <h1>Джейсон Стэтхэм</h1>
-    <img src="file:///C:/Users/user/Desktop/JS%20joint%202/%D0%A1%D1%82%D1%8D%D1%82%D1%85%D0%B5%D0%BC/foto.webp" alt="Фото Джейсона Стэтхема" />
-    <p id="bio">Известный британский актёр, ставший знаменитым благодаря ролям в боевиках и криминальных фильмах.</p>
-    <button id="more-info-btn">Узнать больше</button>
+    <h1>Камень-Ножницы-Бумага</h1>
+    <button onclick="play('rock')">🧐 Камень</button>
+    <button onclick="play('paper')">✂️ Бумага</button>
+    <button onclick="play('scissors')">⚔ Ножницы</button>
+    <br/><br/>
+    <div id="result"></div>
+
+    <!-- Подключение нашего скрипта -->
     <script src="script.js"></script>
 </body>
 </html>
