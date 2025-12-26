@@ -1,8 +1,8 @@
-window.onload = function() {
-    setTimeout(showBio, 2000); // показываем биографию автоматически спустя 2 секунды
-};
-
-function showBio() {
-    var bioElement = document.getElementById("bio");
-    bioElement.style.opacity = '1';
-}
+function turnOn()  {
+            document.getElementById('bulboff').style.display = "none";   // Скрываем изображение OFF
+            document.getElementById('bulbon').style.display = "inline";  // Показываем изображение ON
+        }
+function turnOff() {
+            document.getElementById('bulboff').style.display = "inline";   // Показываем изображение OFF
+            document.getElementById('bulbon').style.display = "none";  // Скрываем изображение ON
+        }
